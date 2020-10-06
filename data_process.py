@@ -9,7 +9,7 @@ import wave
 import pandas as pd
 from glob import glob
 from python_speech_features import fbank, delta
-from config.config import *
+from config import *
 import matplotlib.pyplot as plt
 # plt.figure(figsize=(2.56, 2.56))
 
