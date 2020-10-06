@@ -301,8 +301,7 @@ if __name__ == "__main__":
     # l = get_fbank_feature(y, fs)
     # print(np.shape(l))
     # del_file()
-    # prep(DATAPATH)
+    prep(DATAPATH)
     # prep3()
-    # train_split()
-    preprocess('../data/training-a/a0058.wav')
+    train_split()
 
