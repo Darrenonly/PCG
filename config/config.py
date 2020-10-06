@@ -4,9 +4,9 @@
 @author: Hulk
 """
 
-DATAPATH = "../data/"
+DATAPATH = "./data/"
 
-FEATPATH = "../feat_sr1k_5/"
+FEATPATH = "./feat_sr1k_5/"
 
 TRAIN_DICT = ['training-a', 'training-b', 'training-c', 'training-d', 'training-e', 'training-f', 'validation']
 
@@ -22,4 +22,4 @@ VALIDATION_data = FEATPATH + 'validation_data.pkl'
 NUM_CLASS = 2
 BATCH_SIZE = 1
 EPOCH = 10
-CHECKPOINT_DIR = '..\\checkpoint\\'
+CHECKPOINT_DIR = '.\\checkpoint\\'
