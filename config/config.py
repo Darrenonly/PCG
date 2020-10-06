@@ -22,4 +22,4 @@ VALIDATION_data = FEATPATH + 'validation_data.pkl'
 NUM_CLASS = 2
 BATCH_SIZE = 1
 EPOCH = 10
-CHECKPOINT_DIR = '.\\checkpoint\\'
+CHECKPOINT_DIR = './checkpoint/'
