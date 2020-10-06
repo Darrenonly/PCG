@@ -114,7 +114,7 @@ def train1(train_loader, val_loader, test_loader, model=None, output="checkpoint
                 if val_acc > min_acc:
                     min_acc = val_acc
                     print("save model")
-                    torch.save(net.state_dict(), os.path.join(output, 'best1.pth'))
+                    torch.save(net.state_dict(), os.path.join(output, 'best.pth'))
                 epoch_str = (
                         "Epoch %d. Train Loss: %f, Train Acc: %f, Valid Loss: %f, Valid Acc: %f,"
                         % (epoch, train_loss / len(train_loader),
