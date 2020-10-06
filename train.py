@@ -43,13 +43,13 @@ def make_weights_for_balanced_classes(images, nclasses):
 def train1(train_loader, val_loader, test_loader, model=None, output="checkpoint/chk"):
     # 检测输出路径是否存在
     if not os.path.exists(output):
-        os.mkdir(output)
+        os.makedirs(output)
     print('num_of_trainData:', len(train_loader) * bs)
     print('num_of_testData:', len(test_loader) * bs)
     print('num_of_valData:', len(val_loader) * bs)
 
     if not os.path.exists(CHECKPOINT_DIR):
-        os.mkdir(CHECKPOINT_DIR)
+        os.makedirs(CHECKPOINT_DIR)
 
     optimizer = torch.optim.Adam(model.parameters(), lr=0.002, weight_decay=0.001)        # 参数优化
     criterion = nn.CrossEntropyLoss(weight=torch.from_numpy(np.array([3, 1])).float()).cuda()
