@@ -157,8 +157,8 @@ if __name__ == "__main__":
     model3 = densenet_cifar()
     if torch.cuda.is_available():
         model3 = model3.cuda()
-    loader3, num3 = train1(train_loader, val_loader, test_loader, model=model3, output="../checkpoint/chk")
-    model3.load_state_dict(torch.load('../checkpoint/chk/best.pth'))
+    loader3, num3 = train1(train_loader, val_loader, test_loader, model=model3, output="./checkpoint/chk")
+    model3.load_state_dict(torch.load('./checkpoint/chk/best.pth'))
     eval_net(test_loader=loader3, datanum=num3 * bs, net=model3)
     tb.close()
     exit(0)
